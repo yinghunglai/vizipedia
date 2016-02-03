@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Vizipedia
+    include style.jade
+  body
+    script(type="text/javascript").
+      var Locals = !{JSON.stringify(Locals)};
+    div.app
+    script(type="text/javascript",src="/assets/js/app.js")
+      div.spacer
+      div
+        div.logo.serif vizipedia
+        form(method="post")
+          input(type="text",name="topic",placeholder="Search...")
+          button(type="submit")
+            span(class="fa fa-fw fa-search")

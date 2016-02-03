@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    include style.jade
+  body
+    div.login
+      div.spacer
+      form(action="/login",method="post")
+        div.logo.serif vizipedia
+        div.caption.serif Sign In
+        input(type="text",name="username",placeholder="username")
+        br
+        input(type="password",name="password",placeholder="password")
+        br
+        input(type="submit",value="Sign In")
+        div Don't have an account?
+          a(href="/signup")  Sign Up

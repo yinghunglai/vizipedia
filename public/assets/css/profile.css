@@ -1,0 +1,92 @@
+.profile h2 {
+  margin-top:.38em;
+}
+
+.profile .top {
+  position:relative;
+  z-index:0;
+  padding-top:calc(52px + 0em);
+  width:100%;
+  #height:62vh;
+  margin-bottom:2.6em;
+  background:url('./img/profile.jpg');
+  background-size:cover;
+  text-align:center;
+}
+
+.profile .top:after {
+  content:"";
+  z-index:-2;
+  display:block;
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:radial-gradient(rgba(0,0,0,.5) 20%,rgba(0,0,0,.95) 95%);
+}
+
+.profile .spacer,
+.profile .info {
+  display:inline-block;
+  vertical-align:bottom;
+}
+
+.profile .info {
+  color:#fff;
+}
+
+.profile .username {
+  margin:1.6em 0 0em;
+  #font-family:abril fatface;
+  font-size:3em;
+}
+
+.profile .row {
+  width:100%;
+  margin:2.6em 0;
+  font-size:.65em;
+}
+
+.profile span {
+  font-size:1.8em;
+}
+
+.profile .row .item {
+  display:inline-block;
+  width:120px;
+}
+
+.profile .actions .button {
+  display:inline-block;
+  margin:1em .62em;
+  margin-bottom:4.2em;
+  padding:0 1.3em;
+  line-height:2.6em;
+
+  #background:rgba(0,0,0,.8);
+  border:1px solid rgba(255,255,255,1);
+  border-radius:1.6em;
+
+  font-size:.65em;
+}
+
+
+
+.profile .box {
+  display:inline-block;
+  margin-top:1em;
+  margin-left:.62em;
+  background-size:cover !important;
+  background-position:center !important;
+  width:calc((100% - 3 * .62em) / 4);
+}
+
+.profile a:nth-child(4n+1) .box,
+div.playlistitem:nth-of-type(4n+1) {
+  margin-left:0;
+}
+
+.profile .box .text {
+  margin-top:10em;
+  padding:.62em 0;
+  background:#fff;
+}
